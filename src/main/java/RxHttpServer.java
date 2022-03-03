@@ -42,6 +42,7 @@ public class RxHttpServer {
                     break;
                 case "all-items":
                     id = Integer.parseInt(getParameter(ID_PARAMETER_NAME, parameters));
+                    message = MongoDriver.getAllItems(id);
                 default:
                     throw new IllegalStateException("Unsupported query '" + query + "'");
             }
