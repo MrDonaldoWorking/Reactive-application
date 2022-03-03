@@ -11,7 +11,7 @@ public enum Currency {
         this.rate = rate;
     }
 
-    public double convert(final double amount, final Currency from,  final Currency to) {
+    public static double convert(final double amount, final Currency from,  final Currency to) {
         return amount * from.rate / to.rate;
     }
 }
