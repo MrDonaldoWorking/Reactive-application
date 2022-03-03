@@ -22,7 +22,7 @@ public class RxHttpServer {
         final Map<String, List<String>> parameters = request.getQueryParameters();
         response.setStatus(HttpResponseStatus.OK);
         return response.writeString(Observable.just(
-                String.format("query is: '%s'", query),
+                String.format("query is: '%s'%n", query),
                 String.format("parameters: %s", parameters)
         ));
     }
