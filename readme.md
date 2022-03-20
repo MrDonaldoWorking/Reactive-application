@@ -20,3 +20,7 @@
 
 - задание можно сдавать через e-mail, в заголовке письма указать &quot;[SD-TASK]&quot;
 - в письме указать ссылку на ваш код на github.com
+
+## Todo
+
+Fix the problem with returning all items
